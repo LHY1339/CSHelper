@@ -651,7 +651,7 @@ BIND_EVENT BE_Button_Quit()
 BIND_EVENT BE_Button_Github()
 {
 	AddOutputLog("BIND_EVENT BE_Button_Github() Called");
-	system("start https://github.com/LHY1339");
+	system("start https://github.com/LHY1339/CSHelper");
 }
 
 BIND_EVENT BE_Button_KillCS2()
