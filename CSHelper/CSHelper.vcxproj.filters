@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{7c3e1134-63b6-49b9-822f-f4deb9b16678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Main">
+      <UniqueIdentifier>{f4ba360d-7051-4ed5-9fa5-82e608f47df0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Button">
+      <UniqueIdentifier>{68524a17-47c4-4fa0-84a1-af13e2e520be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Canvas">
+      <UniqueIdentifier>{5547d233-6f7b-4ff1-8c13-a4726cbc2cce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Shared">
+      <UniqueIdentifier>{7569a239-5748-4a27-a164-3e2b228a7f12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Text">
+      <UniqueIdentifier>{a7a9fe9a-9483-40d2-9faf-048031a778dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Image">
+      <UniqueIdentifier>{b52501bf-534b-45b9-a55e-e22a262b472e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ScrollBox">
+      <UniqueIdentifier>{0a45e373-b44f-4901-a79b-34156f264207}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Canvas.cpp">
+      <Filter>Source\Canvas</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Source\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>Source\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>Source\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollBox.cpp">
+      <Filter>Source\ScrollBox</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Main.h">
+      <Filter>Source\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Canvas.h">
+      <Filter>Source\Canvas</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>Source\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>Source\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Source\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>Source\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Source\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollBox.h">
+      <Filter>Source\ScrollBox</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
