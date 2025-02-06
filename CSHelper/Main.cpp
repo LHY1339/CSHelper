@@ -786,6 +786,7 @@ BIND_EVENT BE_ScrollBox_Item()
 {
 	AddOutputLog("BIND_EVENT BE_ScrollBox_Item() Called");
 	FakeItem = ScrollBox_Item.FocusText;
+	FakeSkin = "";
 	FlushFakeText();
 
 	std::vector<std::string> lines = ReadFileLines("./Resource/Data/" + FakeItem + ".data");
@@ -813,7 +814,13 @@ BIND_EVENT BE_Button_Copy()
 {
 	AddOutputLog("BIND_EVENT BE_Button_Copy() Called");
 
+	if (FakeItemCommand == "")
+	{
+		return;
+	}
+
 	std::string chan;
+	std::string withskin;
 	if (FakeChannel=="开箱")
 	{
 		chan = "从武器箱中获得了：";
@@ -822,8 +829,12 @@ BIND_EVENT BE_Button_Copy()
 	{
 		chan = "通过交易获得：";
 	}
+	if (FakeSkin != "")
+	{
+		withskin = "| ";
+	}
 
-	std::string target = "playerchatwheel CW.IFixBomb \"" + chan + FakeItemCommand + "| " + FakeSkin + "\"";
+	std::string target = "playerchatwheel CW.IFixBomb \"" + chan + FakeItemCommand + withskin + FakeSkin + "\"";
 	AddOutputLog(target, "LogEvent");
 	SetClipboardText(target);
 }

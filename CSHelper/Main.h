@@ -27,9 +27,9 @@ bool IsAutoAccept = false;
 bool IsAutoReact = false;
 int FocusID = -1;
 std::string FakeItem;
-std::string FakeSkin;
+std::string FakeSkin = "";
 std::string FakeChannel;
-std::string FakeItemCommand;
+std::string FakeItemCommand = "";
 
 //Defaults
 CCanvas Canvas_Background;
